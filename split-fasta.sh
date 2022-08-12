@@ -1,0 +1,1 @@
+ awk '/^>/ { file=substr($1,2) ".fasta" } { print > file }' fastafilename.fa
